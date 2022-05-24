@@ -13,6 +13,24 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #333333;
+    background-color: #FAFAFA;
+}
+h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
 }
 .container {
     max-width: 1000px;
@@ -87,9 +105,6 @@ body {
     line-height: 25px;
 }
 .ingredients-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 0 3px;
 }
 .ingredients {
@@ -99,6 +114,12 @@ body {
     padding: 57px 54px 57px 40px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    float: right;
+}
+.responsive-below {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -146,4 +167,123 @@ input[type=checkbox] {
   vertical-align: middle;
   word-wrap: break-word;
 } */
+.instruction-inner {
+    width: 60%;
+}
+.instruction-title {
+    margin: 28px 0;
+}
+.instruction-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 38px;
+}
+.order {
+    padding: 2px 13px;
+    background: #F2994A;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+.instruction-item span {
+    font-weight: bold;
+}
+.source-link, a {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BDBDBD;
+    transition: all 0.3s;
+}
+.instruciton-link {
+    transition: all 0.3s;
+}
+.instruciton-link:hover p, .instruciton-link:hover a {
+    color:#333333;
+}
+footer {
+    margin-top: 93px;
+}
+footer p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding: 24px 0;
+}
+@media only screen and (max-width: 1050px) {
+    .container {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .header-inner {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .text-wrapper {
+        padding-right: 20px;
+    }
+    .text-wrapper p {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4F4F4F;
+        text-align: left;
+        max-width: 100%;
+    }
+    .icons-wrapper {
+        float: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        max-width: 365px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .icon-wrapper p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
 
+    }
+    .responsive-below {
+        display: flex;
+        flex-direction: row;
+    }
+    .icon-wrapper {
+        gap: 0;
+    }
+    .ingredients {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .instruction-inner {
+        width: 100%;
+    }
+}

@@ -160,15 +160,9 @@ input[type=checkbox] {
     padding: 10px;
     margin-right: 10px;
 }
-/* label {
-    display: flex;
-  justify-content: fle;
-  align-items: flex-start;
-  vertical-align: middle;
-  word-wrap: break-word;
-} */
+
 .instruction-inner {
-    width: 60%;
+    width: 65%;
 }
 .instruction-title {
     margin: 28px 0;
@@ -260,7 +254,7 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items:flex-start;
-        max-width: 365px;
+        max-width: 330px;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -275,9 +269,10 @@ footer p {
     .responsive-below {
         display: flex;
         flex-direction: row;
+        gap: 20px;
     }
     .icon-wrapper {
-        gap: 0;
+        gap: 3px;
     }
     .ingredients {
         width: 100%;
@@ -285,5 +280,35 @@ footer p {
     }
     .instruction-inner {
         width: 100%;
+    }
+    .footer p {
+        padding: 24px 8px;
+    }
+    .ingredients h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .ingredients h3 {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .intro label {
+        font-size: 16px;
+    }
+    .source-link, a {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .instruciton-link {
+        justify-content: center;
     }
 }
